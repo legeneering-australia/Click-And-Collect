@@ -2,13 +2,11 @@ import React from 'react';
 import { Switch, Redirect } from 'react-router-dom';
 
 import { RouteWithLayout } from './components';
-import { Main as MainLayout, Minimal as MinimalLayout, Signin as SignInLayout } from './layouts';
+import { Client as ClientLayout, Main as MainLayout, Minimal as MinimalLayout, Signin as SignInLayout } from './layouts';
 
 import {
-  Dashboard as DashboardView,
-  StructuralDashboard as StructuralDashboardView,
-  PipingDashboard as PipingDashboardView,
-  FabricationDashboard as FabricationDashboardView,
+  ClientDashboard as DashboardView,
+  NewClientRequest as NewRequestView,
   ProductList as ProductListView,
   UserList as UserListView,
   Typography as TypographyView,
@@ -31,26 +29,20 @@ const Routes = () => {
       <RouteWithLayout
         component={DashboardView}
         exact
-        layout={MainLayout}
-        path="/dashboard"
+        layout={ClientLayout}
+        path="/client/requests"
       />
       <RouteWithLayout
-        component={StructuralDashboardView}
+        component={NewRequestView}
         exact
-        layout={MinimalLayout}
-        path="/dashboard/structural"
+        layout={ClientLayout}
+        path="/client/requests/new"
       />
       <RouteWithLayout
-        component={PipingDashboardView}
+        component={SettingsView}
         exact
-        layout={MinimalLayout}
-        path="/dashboard/piping"
-      />
-      <RouteWithLayout
-        component={FabricationDashboardView}
-        exact
-        layout={MinimalLayout}
-        path="/dashboard/fabrication"
+        layout={ClientLayout}
+        path="/client/settings"
       />
       <RouteWithLayout
         component={UserListView}

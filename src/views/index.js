@@ -1,8 +1,7 @@
 export { default as Account } from './Account';
+export { default as ClientDashboard } from './ClientDashboard';
+export { default as NewClientRequest } from './NewClientRequest';
 export { default as Dashboard } from './Dashboard';
-export { default as StructuralDashboard } from './StructuralDashboard';
-export { default as PipingDashboard } from './PipingDashboard';
-export { default as FabricationDashboard } from './FabricationDashboard';
 export { default as Icons } from './Icons';
 export { default as NotFound } from './NotFound';
 export { default as ProductList } from './ProductList';

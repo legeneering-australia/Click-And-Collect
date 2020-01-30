@@ -272,6 +272,7 @@ const SignIn = props => {
                   size="large"
                   type="submit"
                   variant="contained"
+                  href="./client/requests"
                 >
                   Sign in now
                 </Button>
