@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => ({
   root: {}
 }));
 
-const ScopeDetails = props => {
+const PipingSpecs = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -189,8 +189,8 @@ const ScopeDetails = props => {
   );
 };
 
-ScopeDetails.propTypes = {
+PipingSpecs.propTypes = {
   className: PropTypes.string
 };
 
-export default ScopeDetails;
+export default PipingSpecs;

@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Grid } from '@material-ui/core';
 
-import { RequestDetails, RequirementDetails, ScopeDetails, FabricationDetails } from './components';
+import { RequestDetails, RequirementDetails, ScopeDetails, ScopeConstraints, PipingChecklist, FabricationDetails } from './components';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -41,6 +41,16 @@ const NewClientRequest = () => {
             item
           >
             <ScopeDetails />
+          </Grid>
+          <Grid
+            item
+          >
+            <ScopeConstraints />
+          </Grid>
+          <Grid
+            item
+          >
+            <PipingChecklist />
           </Grid>
           <Grid
             item

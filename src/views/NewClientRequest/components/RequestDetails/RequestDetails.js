@@ -124,6 +124,20 @@ const RequestDetails = props => {
           >
             <Grid
               item
+              xs={12}
+            >
+              <TextField
+                fullWidth
+                helperText=""
+                label="Work Order Number"
+                margin="dense"
+                name="wrNumber"
+                required
+                variant="outlined"
+              />
+            </Grid>
+            <Grid
+              item
               md={12}
               xs={12}
             >
